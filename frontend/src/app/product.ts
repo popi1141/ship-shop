@@ -1,16 +1,22 @@
 class Reading {
+    constructor(
+        readonly timestamp: Date,
+        readonly lat: number,
+        readonly long: number,
+        readonly temp: number,
+        readonly humidity: number,
+        readonly co2: number
+    ) {}
 }
 
 export class Product {
+    readonly readings: Array<Reading>;
     constructor(
-        public name: string,
-        public origin: string,
-        public weight: number,
-        public lat: number,
-        public long: number,
-        public shipDate: Date,
-        public estArrivalDate: Date,
-        public currentBid: number
+        readonly name: string,
+        readonly origin: string,
+        readonly weight: number,
+        readonly shipDate: Date,
+        readonly currentBid: number
     ) {}
 
     freshness() {
