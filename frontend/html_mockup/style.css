@@ -38,7 +38,7 @@ li a {
 
 li a:visited {
   text-decoration: none;
-  color:white
+  color:white;
   font-size: 30px;
   text-transform: uppercase;
 }
@@ -48,7 +48,7 @@ li a:hover {
   color: white;
 }
 li a:active {
-  text-decoration: none
+  text-decoration: none;
   border-bottom: 3px solid currentColor;
   color: white;
 }

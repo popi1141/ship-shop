@@ -1,17 +1,37 @@
-<div class="card">
-  <div class="container">
-    <h5 class="card-title">{{ product.name }}</h5>
-    <div class="container-fluid">
-      <div class="row">
-        <div class=".col">{{ product.weight }} KG</div>
-        <div class=".col">{{ product.origin }}</div>
-        <div class=".col">{{ product.shipDate | date: 'MM/dd' }}</div>
-      </div>
-      <div class="row">
-        <div class=".col">{{ product.estArrivalDate | date: 'MM/dd' }}</div>
-        <div class=".col">{{ product.freshness() }}</div>
-        <div class=".col">{{ product.currentBid }}</div>
+<div class="card" style="width: 22rem;">
+    <img class="card-img-top" src="{{ product.img }}"
+      alt="image">
+    <div class="potatoes">
+      {{ product.name }}
+    </div>
+    <div class="card-body">
+      <table style="border: 0px solid black; width: 100%; color: #174ca9">
+        <tr>
+          <td> <i class="fas fa-weight-hanging"> </i>
+            <p> {{ product.weight }}KG </p>
+          </td>
+          <td> <i class="fas fa-flag"> </i>
+            <p> {{ product.origin }} </p>
+          </td>
+          <td> <i class="fas fa-ship"> </i>
+            <p> {{ product.shipDate | date: 'MM/dd' }} </p>
+          </td>
+        </tr>
+        <tr>
+          <td> <i class="fas fa-calendar"> </i>
+            <p> {{ product.arriveDate | date: 'MM/dd' }} </p>
+          </td>
+          <td> <i class="fas fa-leaf"> </i>
+            <p> {{ product.freshness() }} </p>
+          </td>
+          <td> <i class="fas fa-coins"> </i>
+            <p> ${{ product.highestBid }} </p>
+          </td>
+        </tr>
+      </table>
+      <div>
+        <input id="bidsearch" placeholder="" type="text">
+        <button id="button">BID</button>
       </div>
     </div>
   </div>
-</div>

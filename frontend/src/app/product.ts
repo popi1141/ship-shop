@@ -14,9 +14,12 @@ export class Product {
     constructor(
         readonly name: string,
         readonly origin: string,
+        readonly destination: string,
         readonly weight: number,
         readonly shipDate: Date,
-        readonly currentBid: number
+        readonly arriveDate: Date,
+        readonly highestBid: number,
+        readonly img: string
     ) {}
 
     freshness() {

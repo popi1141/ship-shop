@@ -9,11 +9,27 @@ import { Product } from '../product';
   styleUrls: ['./product-search.component.css']
 })
 export class ProductSearchComponent implements OnInit {
-  products: Array<Product>;
-  constructor(private api: MockProductDataService) { }
+  products = [];
+  constructor(private api: ProductDataService) { }
 
   ngOnInit() {
-    this.products = this.api.getAvailableProducts();
+    this.api.getAllContainers().subscribe((resp) => {
+      resp['containers'].map((val) => {
+        if (val['highestBid'] === null) {
+          val['highestBid'] = 0;
+        }
+        this.products.push(new Product(
+          val.name,
+          val.origin,
+          val.destination,
+          val.weight,
+          val.shipDate,
+          val.arriveDate,
+          val.highestBid,
+          val.src
+        ));
+      });
+    });
   }
 
 }
