@@ -1,0 +1,45 @@
+[COLORS]
+Dark Blue: #174ca9
+Light Blue: #577fc5
+White Background: #fffff
+
+[FONTS]
+Roboto Medium
+Roboto Light 
+
+
+[HEADER] 
+Far Left: Logo (Square)
+Center: Navigation: Home | Categories | Companies | About
+Behavior:
+- Underlines when at the currently selected menu.
+- Categories - Drop down menu to filter selected key words 
+- Companies - Drop down menu to filter selected shipping companies
+Far Right: Search Bar (Using the font-awesome search icon) 
+
+[FRONT PAGE]
+Fluid layout that should ideally show 8 items (4 wide, 2 tall) at once when viewing at a 1920x1080 resolution.
+Item specs: 
+- Rounded rectangle showing item picture + footer with item name
+- 3x2 grid showing key data, namely:
+Shipment Weight | Country of Origin | Shipment Date
+Arrival Date | Freshness | Current bid price
+Bid input bar with button on the bottom 
+
+[PRODUCT PAGE: Shows when a product is selected] 
+Three column layout
+Column 1: Picture of item
+Column 2: Item name + key data, such as:
+- Shipment amount
+- Ship date
+- Arrival date
+- Original port
+- Destination port
+- Freshness
+- Current bit
+- Bid bar + Bid button
+Column 3: Item origin + visualizations
+Visualization Box 1: Price graph
+Visualization Box 2: [Tab Select] Travel Map | Temperature | Co2 | Humidity
+
+
