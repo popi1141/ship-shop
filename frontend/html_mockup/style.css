@@ -1,0 +1,28 @@
+nav {
+  background-color: #174ca9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: left;
+  text-decoration: none;
+}
+
+nav li {
+  display: inline;
+  padding: 14px 16px;
+}
+
+body {
+  margin: 0;
+}
+
+#Logo {
+  width: 100px
+}
