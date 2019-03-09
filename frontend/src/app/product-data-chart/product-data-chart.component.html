@@ -1,3 +1,12 @@
-<p>
-  product-data-chart works!
-</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="column">
+        <canvas id="dataChart" width="400" height="200" aria-label="Product data" role="img"></canvas>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column" *ngFor="let item of dataSets | keyvalue">
+        <button type="button" class="btn btn-primary" (click)="showData(item.key)">{{ item.key }}</button>
+    </div>
+  </div>
+</div>
