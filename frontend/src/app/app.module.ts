@@ -13,7 +13,12 @@ import { ProductCardComponent } from './product-card/product-card.component';
 import { MockProductDataService } from './mock-product-data.service';
 import { ProductDataChartComponent } from './product-data-chart/product-data-chart.component';
 import { NavbarComponent } from './navbar/navbar.component';
+<<<<<<< HEAD
 import { BidFormComponent } from './bid-form/bid-form.component';
+=======
+import { ProductReadingComponent } from './product-reading/product-reading.component';
+import { LoginComponent } from './login/login.component';
+>>>>>>> 520de8906598575f068c31527cf19bfc2420270d
 
 @NgModule({
   declarations: [
@@ -23,7 +28,12 @@ import { BidFormComponent } from './bid-form/bid-form.component';
     ProductCardComponent,
     ProductDataChartComponent,
     NavbarComponent,
+<<<<<<< HEAD
     BidFormComponent,
+=======
+    ProductReadingComponent,
+    LoginComponent,
+>>>>>>> 520de8906598575f068c31527cf19bfc2420270d
   ],
   imports: [
     BrowserModule,
