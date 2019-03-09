@@ -20,7 +20,7 @@
 
 nav ul {
   list-style-type: none;
-  margin: 0;
+  margin: 50px;
   padding: 0;
   overflow: hidden;
   float: left;
@@ -75,6 +75,20 @@ h1 {
   font-family: 'Roboto', sans-serif;
 }
 
+.item {
+  position: relative;
+  background-color: #174ca9;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-top: 50px!important;
+  color: white;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  display: inline;
+  height: 100%;
+}
+
 /* Acts on the item name under its photo */
 .potatoes {
   background-color: #174ca9;
@@ -87,7 +101,6 @@ h1 {
 }
 
 .food {
-  background-color: #174ca9;
   border-radius: 10px;
   color: white;
   font-size: 20px;
@@ -99,10 +112,15 @@ h1 {
   border-radius: 10px!important;
   margin: 30px;
 }
+
+.card2 {
+  overflow-x: hidden;
+  border-radius: 10px!important;
+  margin-top: 400px;
+}
 #search {
   border-radius: 10px;
   margin-right: 30px;
-
 }
 
 #searchimage {
@@ -111,9 +129,6 @@ h1 {
   width: 40%;
   left: -80px;
   top: 20px;
-}
-  margin: auto;
-
 }
 
 #button {
@@ -135,5 +150,16 @@ body {
 }
 
 #Logo {
-  width: 100px
+  width: 100px;
+  margin-left: 50px;
+}
+
+#picture {
+  height: 1000px;
+  margin-top: 50px;
+}
+
+#item-flex {
+  display: flex;
+  align-items: top;
 }
