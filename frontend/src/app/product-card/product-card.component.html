@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="container">
+    <h5 class="card-title">{{ product.name }}</h5>
+    <div class="container-fluid">
+      <div class="row">
+        <div class=".col">{{ product.weight }} KG</div>
+        <div class=".col">{{ product.origin }}</div>
+        <div class=".col">{{ product.shipDate | date: 'MM/dd' }}</div>
+      </div>
+      <div class="row">
+        <div class=".col">{{ product.estArrivalDate | date: 'MM/dd' }}</div>
+        <div class=".col">{{ product.freshness() }}</div>
+        <div class=".col">{{ product.currentBid }}</div>
+      </div>
+    </div>
+  </div>
+</div>
