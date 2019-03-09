@@ -41,7 +41,7 @@ app.post("/addContainer", (req, res) => {
 });
 
 app.post("/receiveData", (req, res) => {
-    let { time, lat, long, temp, humid, co2, containerId } = req.body;
+    let { time, lat, long, temp, humidity, co2, containerId } = req.body;
     mongoClient.connect(url, (err, client) => {
         let dataObj = {
             id: containerId,
@@ -49,7 +49,7 @@ app.post("/receiveData", (req, res) => {
             lat,
             long,
             temp,
-            humid,
+            humidity,
             co2
         }
         let readingsData = client.db("data").collection("readings");
