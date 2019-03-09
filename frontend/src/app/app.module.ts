@@ -11,6 +11,7 @@ import { ProductSearchComponent } from './product-search/product-search.componen
 import { ProductDataService } from './product-data.service';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { MockProductDataService } from './mock-product-data.service';
+import { ProductDataChartComponent } from './product-data-chart/product-data-chart.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { MockProductDataService } from './mock-product-data.service';
     ProductDetailComponent,
     ProductSearchComponent,
     ProductCardComponent,
+    ProductDataChartComponent,
   ],
   imports: [
     BrowserModule,
