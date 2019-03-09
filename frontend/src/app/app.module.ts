@@ -12,6 +12,7 @@ import { ProductDataService } from './product-data.service';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { MockProductDataService } from './mock-product-data.service';
 import { ProductDataChartComponent } from './product-data-chart/product-data-chart.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ProductDataChartComponent } from './product-data-chart/product-data-cha
     ProductSearchComponent,
     ProductCardComponent,
     ProductDataChartComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
