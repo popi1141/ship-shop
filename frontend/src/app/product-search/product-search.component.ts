@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductDataService } from '../product-data.service';
-import { MockProductDataService } from '../mock-product-data.service';
 import { Product } from '../product';
 
 @Component({
