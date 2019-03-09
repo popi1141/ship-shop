@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Product } from '../product';
+import { ProductReadingsService } from '../product-readings.service';
 
 
 @Component({
@@ -9,9 +10,11 @@ import { Product } from '../product';
 })
 export class ProductDetailComponent implements OnInit {
   @Input() product: Product;
-  constructor() { }
+  constructor(private api: ProductReadingsService) { }
 
   ngOnInit() {
+    console.log("run");
+    console.log(this.api.getReadings(1));
   }
 
 }
