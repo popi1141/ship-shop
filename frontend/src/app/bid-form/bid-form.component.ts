@@ -8,16 +8,16 @@ import { HttpClient } from '@angular/common/http';
 })
 export class BidFormComponent implements OnInit {
   private BID_ENDPOINT_URL = 'https://ship-shop.herokuapp.com/createBid';
+  public userId = 3;
+  public tempDev = 0.5;
+  public humidityDev = 0.5;
+  public co2Dev = 0.5;
+  public fillDev: 0.5;
+  public reservePrice: 200;
+  public containerId: 666;
   constructor(
     private http: HttpClient,
-    public userId: string,
-    public tempDev: number,
-    public humidityDev: number,
-    public co2Dev: number,
-    public fillDev: number,
-    public reservePrice: number,
-    public containerId: number
-    ) { }
+  ) { }
 
   ngOnInit() {
   }
